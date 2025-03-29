@@ -8,11 +8,11 @@ This README documents the errors in the original `find_cube_pairs` function and 
 #### ❌ Incorrect:
 ```python
 def find_cube_pairs(target)  # Missing colon
-
+```
 ✅ Fixed:
-
+```py
 def find_cube_pairs(target):  # Added missing colon
-
+```
 🔍 Explanation:
 A colon (:) is required at the end of a function definition in Python.
 2️⃣ Incorrect List Initialization
@@ -25,16 +25,18 @@ solutions = ;  # Incorrect syntax
 solutions = []  # Fixed syntax; replaced `;` with correct list initialization
 
 🔍 Explanation:
+```
 solutions = ; is invalid syntax. An empty list should be initialized using [].
+```
 3️⃣ Wrong Exponentiation Operator
 ❌ Incorrect:
-
+```py
 max_num = round(target *** (1 / 3))  # Incorrect exponentiation
-
+```
 ✅ Fixed:
-
+```py
 max_num = round(target ** (1 / 3))  # Fixed exponentiation (** instead of ***)
-
+```
 🔍 Explanation:
 
     Python uses ** for exponentiation.
@@ -43,22 +45,22 @@ max_num = round(target ** (1 / 3))  # Fixed exponentiation (** instead of ***)
 
 4️⃣ Typo in range() Function
 ❌ Incorrect:
-
+```py
 for a in ranges(1, max_num + 1):  # Typo: 'ranges' → 'range'
-
+```
 ✅ Fixed:
-
+```py
 for a in range(1, max_num + 1):  # Fixed typo
-
+```
 🔍 Explanation:
 
     ranges() is incorrect; the correct function is range().
 
 5️⃣ Incorrect Variable Name in Loop
 ❌ Incorrect:
-
+```py
 solutions.append((a, b))  # Fixed variable name: 'sol' → 'solutions'
-
+```
 🔍 Explanation:
 
     If sol was used instead of solutions, it would raise a NameError.
